@@ -11,6 +11,11 @@ function Navbar() {
   function MainContent() {
     return <h1>I am learning React</h1>;
   }
+
+//const h1 = document.getElement("h1")
+//h1.textContent = "Imperative"
+//h1.className = "header"
+//document.getElementById("root").append(h1)
   
   // Get the root DOM element
   const root = ReactDOM.createRoot(document.getElementById('root'));
