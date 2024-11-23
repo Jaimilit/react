@@ -1,3 +1,8 @@
+//import ReactDOM from "react-dom"
+
+//import ReactDOM from "react-dom/client"
+
+
 // Create Navbar Component
 //function Navbar() {
 //    return (
@@ -58,6 +63,24 @@ const navbar = (
 )
    
 
-ReactDOM.render( navbar
-  ,
-  document.getElementById("root"));
+//ReactDOM.render( navbar, document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"))
+// root.render(navbar)
+
+ //ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+
+const page = (
+  <div>
+    <h1>This is the best CrossFit Community</h1>
+    <h3>Join our Box</h3>
+    <ol>
+      <li>Prices</li>
+      <li>Membership</li>
+      <li>Personal Trainers</li>
+      <li>Meet the team</li>
+    </ol>
+  </div>
+)
+
+ReactDOM.render(page, document.getElementById("root"))
+//document.getElementById("root").append(JSON.stringify(page))
