@@ -1,9 +1,22 @@
 
-import React from "react";
-import Header from "./Header";
+//import React from "react";
+//import Header from "./Header";
 
-import ReactDOM from "react-dom/client";
+//import ReactDOM from "react-dom/client";
 
+function Header() {
+  return (
+    <nav className="nav"> 
+      <img src="./kettlebell.jpeg" alt="CrossFit Logo" className="title-image" />
+      <h1 className ="title">Jaimi's CrossFit Box</h1>
+      <ul className="nav-items">
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      </nav>
+  );
+}
 
 
 function MainContent() {
