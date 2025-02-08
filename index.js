@@ -1,3 +1,8 @@
+
+
+//import React from "react";
+//import ReactDOM from "react-dom/client";
+
 //import ReactDOM from "react-dom"
 
 //import ReactDOM from "react-dom/client"
@@ -50,7 +55,19 @@
 //)
 
 
+
+
+   
+
+//ReactDOM.render( navbar, document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"))
+// root.render(navbar)
+
+ //ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+
 // Create Navbar Component
+
+/*
 const navbar = (
   <nav> 
     <h1> CrossFit </h1>
@@ -61,15 +78,18 @@ const navbar = (
     </ul>
   </nav>
 )
-   
 
-//ReactDOM.render( navbar, document.getElementById("root"));
-// const root = ReactDOM.createRoot(document.getElementById("root"))
-// root.render(navbar)
 
- //ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+function Footer() {
+  return (
+    <footer style={{ backgroundColor: "#333", color: "white", textAlign: "center", padding: "10px", marginTop: "20px" }}>
+      <p>&copy; 2025 CrossFit Community. All rights reserved.</p>
+    </footer>
+  );
+}
 
-const page = (
+function Page() { 
+  return (
   <div>
     <h1>This is the best CrossFit Community</h1>
     <h3>Join our Box</h3>
@@ -81,6 +101,79 @@ const page = (
     </ol>
   </div>
 )
+}
 
-ReactDOM.render(page, document.getElementById("root"))
+*/
+
+
+function Navbar() {
+  return (
+    <nav> 
+      <h1> CrossFit </h1>
+      <ul>
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  );
+}
+
+
+function Header() {
+  return (
+    <div>
+      <h1>Jaimi's CrossFit Box</h1>
+    </div>
+  );
+}
+
+
+function MainContent() {
+  return (
+    <div>
+      <h1>This is the best CrossFit Community</h1>
+            <h3>Join our Box</h3>
+            <ol>
+              <li>Prices</li>
+              <li>Membership</li>
+              <li>Personal Trainers</li>
+              <li>Meet the team</li>
+            </ol>
+    </div>
+  );
+}
+
+
+function Footer() {
+  return (
+    <footer style={{ backgroundColor: "#333", color: "white", textAlign: "center", padding: "10px", marginTop: "20px" }}>
+      <p>&copy; 2025 CrossFit Community. All rights reserved.</p>
+    </footer>
+  );
+}
+
+
+function Page() { 
+  return (
+    <div>
+      <Header />
+      <Navbar />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Page />);
+
+
+
+//const root = ReactDOM.createRoot(document.getElementById("root"));
+//root.render(<Page />);
+
+
+
+//ReactDOM.render(<Page />, document.getElementById("root"))
 //document.getElementById("root").append(JSON.stringify(page))
