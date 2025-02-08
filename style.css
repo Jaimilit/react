@@ -1,0 +1,70 @@
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Distributes items evenly */
+    align-items: center; /* Centers items vertically */
+    width: 100%; /* Makes sure it spans the full width */
+    padding: 10px 0;
+    margin: 0;
+    font-size: 20px; /* Makes text bigger */
+    font-weight: bold; /* Makes text bolder */
+}
+
+.nav-items li {
+    padding: 10px 20px; /* Adds space inside each item */
+}
+
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 15px 0; /* Adds vertical spacing */
+}
+
+.navbar a {
+    color: white; /* Makes text white */
+    text-decoration: none; /* Removes underline */
+    transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Changes color on hover */
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: space-between; /* Distribute elements evenly */
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.title-image {
+    height: 60px;  /* Adjust size */
+}
+
+.title {
+    flex-grow: 1;  /* Allows title to take up available space */
+    text-align: center;  /* Ensures title is centered */
+    font-size: 2rem;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20rem; 
+}

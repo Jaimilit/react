@@ -106,32 +106,25 @@ function Page() {
 */
 
 
-function Navbar() {
+
+function Header() {
   return (
-    <nav> 
-      <h1> CrossFit </h1>
-      <ul>
+    <nav className="nav"> 
+      <img src="./kettlebell.jpeg" alt="CrossFit Logo" className="title-image" />
+      <h1 className ="title">Jaimi's CrossFit Box</h1>
+      <ul className="nav-items">
         <li>Pricing</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
-    </nav>
-  );
-}
-
-
-function Header() {
-  return (
-    <div>
-      <h1>Jaimi's CrossFit Box</h1>
-    </div>
+      </nav>
   );
 }
 
 
 function MainContent() {
   return (
-    <div>
+    <div className="main-content"> 
       <h1>This is the best CrossFit Community</h1>
             <h3>Join our Box</h3>
             <ol>
@@ -147,7 +140,7 @@ function MainContent() {
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: "#333", color: "white", textAlign: "center", padding: "10px", marginTop: "20px" }}>
+    <footer>
       <p>&copy; 2025 CrossFit Community. All rights reserved.</p>
     </footer>
   );
@@ -158,7 +151,6 @@ function Page() {
   return (
     <div>
       <Header />
-      <Navbar />
       <MainContent />
       <Footer />
     </div>
